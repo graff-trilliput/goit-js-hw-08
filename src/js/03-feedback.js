@@ -24,7 +24,7 @@ checkLS();
 formRef.addEventListener('submit', onFormSubmit);
 function onFormSubmit(evt) {
   evt.preventDefault();
-  if (!formData.email.value || !formData.message.value) {
+  if (!formData.email || !formData.message) {
     alert('Please fill out all inputs');
     return;
   }
